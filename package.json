@@ -1,0 +1,21 @@
+{
+  "name": "signup",
+  "version": "1.0.0",
+  "description": "a simple signup system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shiuhoiyan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.0",
+    "crypto": "0.0.3",
+    "express": "^4.13.3",
+    "http": "0.0.0",
+    "jade": "^1.11.0",
+    "mongoose": "^4.3.4",
+    "path": "^0.12.7"
+  }
+}

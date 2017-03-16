@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Detail
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='detail.css')
+
+  body
+    p #{error}
+
+    h1 User Detail
+
+    p Username
+      span #{username}
+
+    p StudentID 
+      span #{sid}
+
+    p Phone Number
+      span #{phone}
+
+    p E-mail
+      span #{email}
+    button
+      a(href='/logout') Logout

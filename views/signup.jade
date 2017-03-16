@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title SIGNUP
+    link(rel='stylesheet' href='signup.css')
+    meta(charset='utf-8')
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js')
+    script(type='text/javascript' src='validator.js')
+    script(type='text/javascript' src='signup.js')
+
+  body
+    h1 Register An Account
+    div(id='error') #{error}
+    form(id='register-form' method='post')
+      div.username
+        label(for='username') Username
+        input(id='username' name='username')
+        span.error
+
+      div.password
+        label(for='password') Password
+        input(id='password' name='password' type="password")
+        span.error
+      
+      div.repeatPassword
+        label(for='repeatPassword') Repeat Password
+        input(id='repeatPassword' type="password")
+        span.error
+      
+      div.sid
+        label(for='sid') Student ID
+        input(id='sid' name='sid')
+        span.error
+      
+      div.phone
+        label(for='phone') Phone number
+        input(id='phone' name='phone')
+        span.error
+      
+      div.email
+        label(for='email') E-mail
+        input(id='email' name='email')
+        span.error
+
+      div.buttons
+        input.button.reset(type='reset' value='Reset')
+        input.button.submit(type='submit' value='Submit')

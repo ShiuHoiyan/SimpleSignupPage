@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Signin
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='signin.css')
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.1.4.min.js')
+
+  body
+    p #{msg}
+    h1 Signin
+    form(method='post' action='/')
+      div.username
+        label(for='username') Username
+        input(id='username' name='username')
+      
+      div.password
+        label(for='password') Password
+        input(id='password' name='password' type='password')
+
+      div.buttons
+        button
+          a(href='/regist') Register
+        input.button.reset(type='submit' value='LognIn')
